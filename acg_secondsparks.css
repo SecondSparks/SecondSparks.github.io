@@ -248,3 +248,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   clear: both;
   display: table;
 }
+
+.rectangle {
+  height: 50px;
+  width: 500px;
+  background-color: #FFD800;
+  opacity: 0.5;
+}
