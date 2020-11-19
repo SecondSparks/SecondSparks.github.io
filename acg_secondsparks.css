@@ -249,7 +249,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   display: table;
 }
 
-.rectangle_left {
+.rectangle-left {
   height: 20px;
   width: 400px;
   background-color: #FFD800;
@@ -259,7 +259,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   top: 400px;
 }
 
-.rectangle_right {
+.rectangle-right {
   height: 20px;
   width: 400px;
   background-color: #FFD800;
