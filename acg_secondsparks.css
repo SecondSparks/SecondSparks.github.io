@@ -283,7 +283,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   position: relative;
   left:-50px;
   top:-100px;
-  z-index: -1;
 }
 
 .rectangle-small-bottom {
@@ -294,5 +293,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   position: relative;
   left:-50px;
   top:-130px;
-  z-index: -1;
 }
