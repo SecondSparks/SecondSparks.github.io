@@ -274,3 +274,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   left: 700px;
   top: 400px;
 }
+
+.rectangle-small {
+  height: 20px;
+  width: 100px;
+  background-color: #3FFFEF;
+  opacity: 0.5;
+  position: relative;
+}
