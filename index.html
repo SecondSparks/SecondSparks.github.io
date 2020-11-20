@@ -82,9 +82,8 @@ h6{
 
       <h4>Investigators</h4>
       <p class="w3-text-grey">Our investigators have many years of experience and are specialised in an area and are impossible to identify.</p><br>
-
       <h4>New Recruits</h4>
-      <p class="w3-text-grey">When we find someone with exceptional skills we test them to see if they can join our team.</p>
+      <p id="demo" onclick="myFunction()" class="w3-text-grey">When we find someone with exceptional skills we test them to see if they can join our team.</p>
     </div>
 
     <div class="w3-col l6 w3-padding-large">
@@ -222,8 +221,13 @@ h6{
       <img src="footer_flip.jpg" alt="Sparks" style="width:25%;height:25%">
     </div>
   </div>
-
 </footer>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = "red";
+}
+</script>
 
 </body>
 </html>
