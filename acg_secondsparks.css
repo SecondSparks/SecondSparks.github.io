@@ -275,16 +275,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   top: 400px;
 }
 
-.rectangle-small {
+.rectangle-small-top {
   height: 20px;
   width: 100px;
   background-color: #3FFFEF;
   opacity: 0.5;
-
-}
-
-.rectangle-small.top {
   position: relative;
   left:-50px;
   top:-100px;
+}
+
+.rectangle-small-bottom {
+  height: 20px;
+  width: 100px;
+  background-color: #3FFFEF;
+  opacity: 0.5;
+  position: relative;
+  left:-50px;
+  top:-130px;
 }
