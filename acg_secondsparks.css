@@ -237,7 +237,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* ACG ADDITIONS */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column-two {float: left;width: 50%;padding: 0px;}
-.column-three {float: left;width: 33.33%;padding: 200px;}
+.column-three {float: left;width: 33.33%;padding: 25px;}
 .column-four {float: left;width: 25%;padding: 25px;}
 
 /* Clear floats after image containers */
