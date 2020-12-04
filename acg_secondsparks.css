@@ -280,5 +280,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   padding-left: 5px;
   padding-right: 5px;
   font-size: 30px;
+  background-color: inherit;
   max-width: 100px;
 }
