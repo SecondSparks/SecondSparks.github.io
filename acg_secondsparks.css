@@ -251,5 +251,5 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .rectangle-found-bottom {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
 .rectangle-searching-top {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
 .rectangle-searching-bottom {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
-.rectangle-recruitmentstep1 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:310px;top:120px;padding:0px 16px;color: black;}
-.rectangle-recruitmentstep2 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:290px;top:408px;padding:0px 16px;color: black;}
+.rectangle-recruitmentstep1 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:310px;top:120px;padding:0px 16px;color: black;z-index: -1;}
+.rectangle-recruitmentstep2 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:290px;top:408px;padding:0px 16px;color: black;z-index: -1;}
