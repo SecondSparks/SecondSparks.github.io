@@ -282,5 +282,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   font-size: 30px;
   background-color: inherit;
   border-color: inherit;
+  border-width: 0px;
   max-width: 100px;
 }
