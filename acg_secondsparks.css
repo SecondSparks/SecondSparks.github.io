@@ -147,7 +147,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 /* ACG change: added a very large padding */
 .w3-padding-128{padding-top:128px!important;padding-bottom:64px!important}
 /* ACG change: added a padding that keeps the rounded corners of the images*/
-.w3-padding-round-128{padding-top:128px!important;padding-bottom:64px!important;border-radius: 5px}
+.w3-padding-round-128{padding-top:128px!important;border-radius: 5px}
 .w3-left{float:left!important}.w3-right{float:right!important}
 .w3-button:hover{color:#000!important;background-color:#ccc!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
