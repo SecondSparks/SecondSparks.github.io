@@ -118,62 +118,10 @@ div.lowercase {
 <script>
 
   function fCheckClues() {
-    fCheckInput ("ruin", document.getElementById("id-card1").value, "id-card1")
-  }
-
-  function fCheckClues_OLD() {
-    var card1 = "ruin";
-    var card2 = "balls";
-    var card3 = "old";
-    var card4 = "pear";
-    var input1 = document.getElementById("id-card1").value;
-    var input2 = document.getElementById("id-card2").value;
-    var input3 = document.getElementById("id-card3").value;
-    var input4 = document.getElementById("id-card4").value;
-
-    if (input1 == "") {
-      input1 = "X";
-      document.getElementById("id-card1").style.color = "red";
-    }
-    else if ((input1).toLowerCase() == card1) {
-      document.getElementById("id-card1").style.color = "green";
-    }
-    else {
-      document.getElementById("id-card1").style.color = "red";
-    }
-
-    if (input2 == "") {
-      input2 = "X";
-      document.getElementById("id-card2").style.color = "red";
-    }
-    else if ((input2).toLowerCase() == card2) {
-      document.getElementById("id-card2").style.color = "green";
-    }
-    else {
-      document.getElementById("id-card2").style.color = "red";
-    }
-
-    if (input3 == "") {
-      input3 = "X";
-      document.getElementById("id-card3").style.color = "red";
-    }
-    else if ((input3).toLowerCase() == card3) {
-      document.getElementById("id-card3").style.color = "green";
-    }
-    else {
-      document.getElementById("id-card3").style.color = "red";
-    }
-
-    if (input4 == "") {
-      input4 = "X";
-      document.getElementById("id-card4").style.color = "red";
-    }
-    else if ((input4).toLowerCase() == card4) {
-      document.getElementById("id-card4").style.color = "green";
-    }
-    else {
-      document.getElementById("id-card4").style.color = "red";
-    }
+    fCheckInput ("ruin", document.getElementById("id-card1").value, "id-card1");
+    fCheckInput ("balls", document.getElementById("id-card2").value, "id-card2");
+    fCheckInput ("pear", document.getElementById("id-card3").value, "id-card3");
+    fCheckInput ("two", document.getElementById("id-card4").value, "id-card4");
   }
 
   function fCheckInput(card, input, idcard) {
