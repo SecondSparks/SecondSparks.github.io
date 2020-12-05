@@ -68,7 +68,7 @@ div.lowercase {
            <input type="text" id="id-card1" name="card1" value="Card1" class="acg-input-block" style="bottom: 375px; left: 260px;">
            <input type="text" id="id-card2" name="card2" value="Card2" class="acg-input-block" style="bottom: 330px; left: 360px;">
            <button id="VerifButton" class="acg-center-horizontal" onclick="fCheckClues()">Check the clues</button>
-           <p id="id-debug_text1"></p>
+           <p id="id-debug-text1"></p>
        </div>
     </div>
     <div class="rectangle-recruitmentstep2 w3-hide-small">
@@ -115,8 +115,6 @@ div.lowercase {
 <script>
   function fCheckClues() {
 
-    document.getElementById("id-debug-test1").innerHTML = "Clues are checked";
-
     var card1 = "ruin";
     var card2 = "balls";
     var card3 = "old";
@@ -141,6 +139,7 @@ div.lowercase {
       document.getElementById("id-card1").style.color = "red";
     }
 
+  document.getElementById("id-debug-text1").innerHTML = "Clues are checked";
 
   }
 
