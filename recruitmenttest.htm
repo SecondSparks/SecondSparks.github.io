@@ -128,11 +128,11 @@ div.lowercase {
     var lc-input3 = input3.toLowerCase();
     var lc-input4 = input4.toLowerCase();
 
-    if (input1 == "") {
-      input1 = "X";
+    if (document.getElementById("id-card1").value1 == "") {
+      document.getElementById("id-card1").value = "X";
       document.getElementById("id-card1").style.color = "red";
     }
-    else if (input1 == card1) {
+    else if (document.getElementById("id-card1").value == "ruin") {
       document.getElementById("id-card1").style.color = "green";
     }
     else {
