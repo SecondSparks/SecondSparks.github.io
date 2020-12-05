@@ -71,7 +71,8 @@ div.lowercase {
            <input type="text" id="id-card2" name="card2" value="Card2" class="acg-input-block" style="bottom: 270px; left: 360px;">
            <input type="text" id="id-card3" name="card3" value="Card3" class="acg-input-block" style="bottom: 175px; left: 260px;">
            <input type="text" id="id-card4" name="card4" value="Card4" class="acg-input-block" style="bottom: 20px; left: 60px;">
-           <button id="VerifButton" class="acg-center-horizontal" onclick="fCheckClues()">Check the clues</button>
+           <button id="VerifButton" class="acg-center-horizontal" onclick="fTestAll()">Check the clues</button>
+           <p id="demo">Debug text here</p>
        </div>
     </div>
     <div class="rectangle-recruitmentstep2 w3-hide-small">
@@ -118,10 +119,30 @@ div.lowercase {
 <script>
 
   function fCheckClues() {
-    setTimeout(fCheckInput ("ruin", document.getElementById("id-card1").value, "id-card1"),1000)
-    setTimeout(fCheckInput ("balls", document.getElementById("id-card2").value, "id-card2"),2000)
-    setTimeout(fCheckInput ("pear", document.getElementById("id-card3").value, "id-card3"),3000)
     setTimeout(fCheckInput ("two", document.getElementById("id-card4").value, "id-card4"),4000)
+    setTimeout(fCheckInput ("ruin", document.getElementById("id-card1").value, "id-card1"),1000);
+    setTimeout(fCheckInput ("balls", document.getElementById("id-card2").value, "id-card2"),2000);
+    setTimeout(fCheckInput ("pear", document.getElementById("id-card3").value, "id-card3"),3000);
+    setTimeout(fCheckInput ("two", document.getElementById("id-card4").value, "id-card4"),4000);
+  }
+
+  function fTestAll(){
+    setTimeout(fTest1, 2000)
+    setTimeout(fTest2, 4000)
+    setTimeout(fTest3, 6000)
+  }
+
+  function fTest1(){
+    document.getElementById("demo").innerHTML = "DEBUG 1";
+  }
+  function fTest2(){
+    document.getElementById("demo").innerHTML = "DEBUG 2";
+  }
+  function fTest3(){
+    document.getElementById("demo").innerHTML = "DEBUG 3";
+  }
+  function fTest4(){
+    document.getElementById("demo").innerHTML = "DEBUG 4";
   }
 
   function fCheckInput(card, input, idcard) {
