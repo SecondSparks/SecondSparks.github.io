@@ -115,13 +115,14 @@ div.lowercase {
 <script>
   function fCheckClues() {
 
+    var card1 = "ruin";
 
 
     if (document.getElementById("id-card1").value1 == "") {
       document.getElementById("id-card1").value = "X";
       document.getElementById("id-card1").style.color = "red";
     }
-    else if ((document.getElementById("id-card1").value).toLowerCase() == "ruin") {
+    else if ((document.getElementById("id-card1").value).toLowerCase() == card1) {
       document.getElementById("id-card1").style.color = "green";
     }
     else {
