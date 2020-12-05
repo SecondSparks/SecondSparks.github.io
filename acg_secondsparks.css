@@ -244,15 +244,15 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
 /* ACG ADDITIONS */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* ACG Change - Three image containers (use 25% for four, and 50% for two, etc) */
 .column-two {float: left;width: 50%;padding: 0px;}
 .column-three {float: left;width: 33.33%;padding: 25px;}
 .column-four {float: left;width: 25%;padding: 25px;}
 
-/* Clear floats after image containers */
+/* ACG Change - Clear floats after image containers */
 .row::after {content: ""; clear: both; display: table;}
 
-/* blue rectangles */
+/* ACG Change - Blue rectangles */
 .rectangle-left {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left: 300px;top: 100px;}
 .rectangle-right {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left: 350px;top: 100px;}
 .rectangle-found-top {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
@@ -263,7 +263,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .rectangle-recruitmentstep2 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:790px;top:45px;padding:0px 16px;color: black;z-index: -1;}
 .rectangle-recruitmentstep3 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:250px;top:25px;padding:0px 16px;color: black;z-index: -1;}
 
-/* Container to display entry fields over an image*/
+/* ACG Change - Container to display entry fields over an image*/
 .acg-container-blackboard {
     position: relative;
     font-family: Arial;
@@ -286,4 +286,30 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   border-color: inherit;
   border-width: 0px;
   max-width: 100px;
+}
+
+/* ACG Change - Center a button in a div section*/
+.acg-button-center-vertical {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.acg-button-center-horizontal {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.acg-button-center-both {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
