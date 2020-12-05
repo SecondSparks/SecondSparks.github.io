@@ -118,7 +118,7 @@ div.lowercase {
 <script>
 
   function fCheckClues() {
-    fCheckInput ("ruin", document.getElementById("id-card1").value)
+    fCheckInput ("ruin", document.getElementById("id-card1").value, "id-card1")
   }
 
   function fCheckClues_OLD() {
@@ -176,16 +176,16 @@ div.lowercase {
     }
   }
 
-  function fCheckInput(card, input) {
+  function fCheckInput(card, input, idcard) {
     if (input == "") {
-      document.getElementById("id-card1").value = "X";
-      document.getElementById("id-card1").style.color = "red";
+      document.getElementById(idcard).value = "X";
+      document.getElementById(idcard).style.color = "red";
     }
     else if ((input).toLowerCase() == card) {
-      document.getElementById("id-card1").style.color = "green";
+      document.getElementById(idcard).style.color = "green";
     }
     else {
-      document.getElementById("id-card1").style.color = "red";
+      document.getElementById(idcard).style.color = "red";
     }
   }
 
