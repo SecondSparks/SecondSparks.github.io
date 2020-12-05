@@ -288,8 +288,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   max-width: 100px;
 }
 
-/* ACG Change - Center a button in a div section*/
-.acg-button-center-vertical {
+/* ACG Change - Center an item in a div section*/
+.acg-center-vertical {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -297,7 +297,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   transform: translate(-50%);
 }
 
-.acg-button-center-horizontal {
+.acg-center-horizontal {
   margin: 0;
   position: absolute;
   left: 50%;
@@ -305,7 +305,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   transform: translate(-50%);
 }
 
-.acg-button-center-both {
+.acg-center-both {
   margin: 0;
   position: absolute;
   top: 50%;
