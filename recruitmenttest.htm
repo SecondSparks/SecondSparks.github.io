@@ -18,6 +18,10 @@ h6{
   letter-spacing: 2px;
 }
 
+div.lowercase {
+  text-transform: lowercase;
+}
+
 </style>
 
 <head>
@@ -109,30 +113,37 @@ h6{
 
 <!-- Functions -->
 <script>
-  function fCheckClues()
-  {
-    if (document.getElementById("id-card1").value == "ruin") {
+  function fCheckClues() {
+    var card1 = "ruin";
+    var card2 = "balls";
+    var card3 = "old";
+    var card4 = "pear";
+
+    var input1 = document.getElementById("id-card1").value;
+    var input2 = document.getElementById("id-card2").value;
+    var input3 = document.getElementById("id-card3").value;
+    var input4 = document.getElementById("id-card4").value;
+
+    var lc-input1 = input1.toLowerCase();
+    var lc-input2 = input2.toLowerCase();
+    var lc-input3 = input3.toLowerCase();
+    var lc-input4 = input4.toLowerCase();
+
+    if (lc-input1 == "") {
+      input1 = "X";
+      document.getElementById("id-card1").style.color = "red";
+    }
+    else if (lc-input1 == card1) {
       document.getElementById("id-card1").style.color = "green";
     }
     else {
       document.getElementById("id-card1").style.color = "red";
     }
 
-    if (document.getElementById("id-card2").value == "balls") {
-      document.getElementById("id-card2").style.color = "green";
-    }
-    else {
-      document.getElementById("id-card2").style.color = "red";
-    }
+
 
     document.getElementById("id-debug-test1").innerHTML = "Clues are checked";
   }
-
-  function fResetClues()
-  {
-    document.getElementById("id-debug-test1").innerHTML = "Clues are reset";
-  }
-
 
 </script>
 
