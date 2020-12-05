@@ -121,14 +121,14 @@ div.lowercase {
       document.getElementById("id-card1").value = "X";
       document.getElementById("id-card1").style.color = "red";
     }
-    else if (document.getElementById("id-card1").value == "ruin") {
+    else if ((document.getElementById("id-card1").value).toLowerCase() == "ruin") {
       document.getElementById("id-card1").style.color = "green";
     }
     else {
       document.getElementById("id-card1").style.color = "red";
     }
 
-  document.getElementById("id-debug-text1").innerHTML = "Clues are checked";
+    document.getElementById("id-debug-text1").innerHTML = "Clues are checked";
 
   }
 
