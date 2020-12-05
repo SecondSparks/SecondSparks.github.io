@@ -18,6 +18,9 @@ h6{
   letter-spacing: 2px;
 }
 
+div.lowercase {
+  text-transform: lowercase;
+}
 
 </style>
 
@@ -111,16 +114,17 @@ h6{
 <!-- Functions -->
 <script>
   function fCheckClues() {
+
+    document.getElementById("id-debug-test1").innerHTML = "Clues are checked";
+
     var card1 = "ruin";
     var card2 = "balls";
     var card3 = "old";
     var card4 = "pear";
-
     var input1 = document.getElementById("id-card1").value;
     var input2 = document.getElementById("id-card2").value;
     var input3 = document.getElementById("id-card3").value;
     var input4 = document.getElementById("id-card4").value;
-
     var lc-input1 = input1.toLowerCase();
     var lc-input2 = input2.toLowerCase();
     var lc-input3 = input3.toLowerCase();
@@ -137,7 +141,7 @@ h6{
       document.getElementById("id-card1").style.color = "red";
     }
 
-    document.getElementById("id-debug-test1").innerHTML = "Clues are checked";
+
   }
 
 </script>
