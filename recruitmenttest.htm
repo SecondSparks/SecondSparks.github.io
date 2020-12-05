@@ -67,6 +67,8 @@ div.lowercase {
        <div class="acg-container-blackboard">
            <input type="text" id="id-card1" name="card1" value="Card1" class="acg-input-block" style="bottom: 375px; left: 260px;">
            <input type="text" id="id-card2" name="card2" value="Card2" class="acg-input-block" style="bottom: 330px; left: 360px;">
+           <input type="text" id="id-card3" name="card3" value="Card3" class="acg-input-block" style="bottom: 275px; left: 260px;">
+           <input type="text" id="id-card4" name="card4" value="Card4" class="acg-input-block" style="bottom: 180px; left: 80px;">
            <button id="VerifButton" class="acg-center-horizontal" onclick="fCheckClues()">Check the clues</button>
            <p id="id-debug-text1"></p>
        </div>
@@ -120,8 +122,9 @@ div.lowercase {
     var card3 = "old";
     var card4 = "pear";
     var input1 = document.getElementById("id-card1").value;
-
-
+    var input2 = document.getElementById("id-card2").value;
+    var input3 = document.getElementById("id-card3").value;
+    var input4 = document.getElementById("id-card4").value;
 
     if (input1 == "") {
       input1 = "X";
@@ -132,6 +135,39 @@ div.lowercase {
     }
     else {
       document.getElementById("id-card1").style.color = "red";
+    }
+
+    if (input2 == "") {
+      input2 = "X";
+      document.getElementById("id-card2").style.color = "red";
+    }
+    else if ((input2).toLowerCase() == card2) {
+      document.getElementById("id-card2").style.color = "green";
+    }
+    else {
+      document.getElementById("id-card2").style.color = "red";
+    }
+
+    if (input3 == "") {
+      input3 = "X";
+      document.getElementById("id-card3").style.color = "red";
+    }
+    else if ((input3).toLowerCase() == card3) {
+      document.getElementById("id-card3").style.color = "green";
+    }
+    else {
+      document.getElementById("id-card3").style.color = "red";
+    }
+
+    if (input4 == "") {
+      input4 = "X";
+      document.getElementById("id-card4").style.color = "red";
+    }
+    else if ((input4).toLowerCase() == card4) {
+      document.getElementById("id-card4").style.color = "green";
+    }
+    else {
+      document.getElementById("id-card4").style.color = "red";
     }
 
     document.getElementById("id-debug-text1").innerHTML = "Clues are checked";
