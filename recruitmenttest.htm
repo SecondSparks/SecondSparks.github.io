@@ -123,15 +123,12 @@ div.lowercase {
     var input2 = document.getElementById("id-card2").value;
     var input3 = document.getElementById("id-card3").value;
     var input4 = document.getElementById("id-card4").value;
-    var lc-input1 = (input1).toLowerCase();
-
-
 
     if (input1 == "") {
       input1 = "X";
       document.getElementById("id-card1").style.color = "red";
     }
-    else if (lc-input1 == card1) {
+    else if ((input1).toLowerCase() == card1) {
       document.getElementById("id-card1").style.color = "green";
     }
     else {
