@@ -177,7 +177,7 @@ div.lowercase {
   }
 
   function fCheckInput(card, input) {
-    if (input == "") {
+    if (input === undefined) {
       input = "X";
       document.getElementById("id-card1").style.color = "red";
     }
