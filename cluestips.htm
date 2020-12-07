@@ -79,8 +79,11 @@ div.lowercase {
   }
 
   function fSpoiler() {
-    if ((idUserInput).toLowerCase() == "i want to see the spoilers") {
-
+    if ((inputSpoiler).toLowerCase() == "i want to see the spoilers") {
+      document.getElementById(idUserInput).style.color = "green";
+    }
+    else {
+        document.getElementById(idUserInput).style.color = "red";
     }
   }
 
