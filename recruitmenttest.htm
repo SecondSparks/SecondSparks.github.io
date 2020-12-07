@@ -77,7 +77,7 @@ div.lowercase {
            <input type="text" id="id-card3" name="card3" value="Card3" class="acg-input-block" style="bottom: 175px; left: 260px;">
            <input type="text" id="id-card4" name="card4" value="Card4" class="acg-input-block" style="bottom: 20px; left: 60px;">
            <h5><button id="buttonTips" class="acg-bar-button w3-display-left  w3-light-grey w3-button" style="left:10%;top:5px" onclick="fCluesTips" >Get some tips to solve the clues</button>
-           <h5><button id="buttonTest" class="acg-bar-button w3-display-right w3-light-grey w3-button" style="right:20%;top:5px" onclick="fCheckClues()">Test the clues I found</button>
+           <h5><button id="buttonTest" class="acg-bar-button w3-display-right w3-light-grey w3-button" style="right:20%;top:5px" onclick="fCheckClues()">Test the clues you found</button>
        </div>
     </div>
     <div class="rectangle-recruitmentstep2 w3-hide-small">
@@ -90,11 +90,10 @@ div.lowercase {
       <br>
       <br>
       Once complete, the sentence will give you a location on Google Maps where you will find a number. </p>
+      <p class="w3-large w3-text-grey w3-hide-medium">If you need help, you can test that you have the correct clues or get some tips. </p>
       <div class="w3-bar">
         <a href="images\secretmessage.pdf" download class="w3-center w3-light-grey w3-button">Click this button to download a copy of the blackboard text to work offline.</a>
       </div>
-      <p class="w3-large w3-text-grey w3-hide-medium">If you need help, you can test that you have the correct clues or get some tips. </p>
-
     </div>
 
   </div>
@@ -135,7 +134,7 @@ div.lowercase {
 
   function fCheckInput(card, input, idcard) {
     if (input == "") {
-      document.getElementById(idcard).value = "X";
+      document.getElementById(idcard).value = "(missing)";
       document.getElementById(idcard).style.color = "red";
     }
     else if ((input).toLowerCase() == card) {
