@@ -62,7 +62,7 @@ div.lowercase {
         <br>
         To make sure you are not accessing the tips by mistake, you need to type the following sentence:</p>
         <p class="w3-large w3-text-grey w3-center">i want to see the spoilers</p>
-        <input class="w3-large w3-text-grey w3-center" type="text" id="idUserInput" name="inputSpoiler" style="font-size:26px" text="(type: I want to read the spoilers)" onkeypress="fSpoiler()">
+        <input class="w3-center" type="text" id="idUserInput" name="inputSpoiler" style="font-size:26px" text="(type: I want to read the spoilers)" onkeypress="fSpoiler()">
   </div>
 
 </div>
@@ -74,6 +74,9 @@ div.lowercase {
 <!-- Functions -->
 <script>
 
+  funcion fBack(){
+    window.open("recruitmenttest.htm","_self");
+  }
 
   function fSpoiler() {
     if ((idUserInput).toLowerCase() == "i want to see the spoilers") {
@@ -86,7 +89,7 @@ div.lowercase {
 <!-- Back button at the bottom of the page -->
 <div class="w3-bottom">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <h5><button id="buttonBack" class="acg-bar-button w3-display-center w3-light-grey w3-button" style="right:20%;top:5px" onclick="fBack()">Back</button>
+    <h5><button id="idButtonBack" class="acg-bar-button w3-display-center w3-light-grey w3-button" style="right:20%;top:5px" onclick="fBack()">Back</button>
   </div>
 </div>
 
