@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>SECOND SPARKS - Tips to find the clues</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="acg_secondsparks.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5{
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+h6{
+  font-family:"Playfair Display";
+  margin:10px 0;
+  letter-spacing: 2px;
+}
+
+div.lowercase {
+  text-transform: lowercase;
+}
+
+</style>
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="index.html" class="w3-bar-item w3-button">Second Sparks - Detective Agency</a>
+  </div>
+</div>
+
+<!-- Header -->
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- Recruitment test STEP 1 section -->
+  <div class="w3-row w3-padding-64" id="recruitment-test1">
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Recruitment Test</h1><br>
+      <h5 class="w3-center">Step #1 - Status: COMPLETE</h5>
+      <p class="w3-large">Congratulations! You have found the secret page of the website, succeeding in the first step of our recruitment test.
+        But don't pat yourself on the back just yet: this was the easiest part, by far. Things are going to get tougher from here on in, a lot tougher.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Second Sparks only hires the very best investigators so we want to make sure you are worthy of carrying the Second Sparks badge.</p>
+    </div>
+
+    <div class="w3-col l6 w3-padding-round-96 w3-hide-small">
+      <img src="images\spyexam03.jpg" class="w3-round w3-image" alt="Spy Exam" style="width:100%;" >
+    </div>
+
+    <div class="rectangle-recruitmentstep1 w3-hide-small">
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+<!-- Footer -->
+
+<!-- Functions -->
+<script>
+
+  function fCheckClues() {
+    setTimeout(function() {fCheckInput("ruin", document.getElementById("id-card1").value, "id-card1");},0000);
+    setTimeout(function() {fCheckInput("balls", document.getElementById("id-card2").value, "id-card2");},1000);
+    setTimeout(function() {fCheckInput("pear", document.getElementById("id-card3").value, "id-card3");},2000);
+    setTimeout(function() {fCheckInput("two", document.getElementById("id-card4").value, "id-card4");},3000);
+  }
+
+  function fCheckInput(card, input, idcard) {
+    if (input == "") {
+      document.getElementById(idcard).value = "X";
+      document.getElementById(idcard).style.color = "red";
+    }
+    else if ((input).toLowerCase() == card) {
+      document.getElementById(idcard).style.color = "green";
+    }
+    else {
+      document.getElementById(idcard).style.color = "red";
+    }
+  }
+
+
+</script>
+
+<!-- Back button at the bottom of the page -->
+<div class="w3-bottom">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="recruitementtest.htm" class="w3-bar-item w3-button">Back</a>
+  </div>
+</div>
+
+</body>
+</html>
