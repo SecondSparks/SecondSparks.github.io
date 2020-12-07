@@ -45,7 +45,7 @@ div.lowercase {
   <!-- Recruitment test STEP 1 section -->
   <div class="w3-row w3-padding-64" id="recruitment-test1">
     <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Recruitment Test</h1><br>
+      <h1 class="w3-center">Tips to find the clues</h1><br>
       <h5 class="w3-center">Step #1 - Status: COMPLETE</h5>
       <p class="w3-large">Congratulations! You have found the secret page of the website, succeeding in the first step of our recruitment test.
         But don't pat yourself on the back just yet: this was the easiest part, by far. Things are going to get tougher from here on in, a lot tougher.</p>
@@ -89,13 +89,16 @@ div.lowercase {
     }
   }
 
+  function fBack() {
+    window.open("recruitmenttest.htm");
+  }
 
 </script>
 
 <!-- Back button at the bottom of the page -->
 <div class="w3-bottom">
   <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="recruitementtest.htm" class="w3-bar-item w3-button">Back</a>
+    <h5><button id="buttonBack" class="acg-bar-button w3-display-center w3-light-grey w3-button" style="right:20%;top:5px" onclick="fBack()">Back</button>
   </div>
 </div>
 
