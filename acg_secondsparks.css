@@ -148,6 +148,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-128{padding-top:128px!important;padding-bottom:64px!important}
 /* ACG change: added a padding that keeps the rounded corners of the images*/
 .w3-padding-round-96{padding-top:96px!important;border-radius: 5px}
+.w3-padding-round-64{padding-top:64px!important;border-radius: 5px}
+.w3-padding-round-32{padding-top:32px!important;border-radius: 5px}
 .w3-padding-round-16{padding-top:16px!important;border-radius: 5px}
 /* ACG change: added a padding to display the DOWNLOAD button below the picture*/
 .w3-padding-download{padding:20px 20px!important}
@@ -259,9 +261,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .rectangle-found-bottom {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
 .rectangle-searching-top {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
 .rectangle-searching-bottom {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
-.rectangle-recruitmentstep1 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:250px;top:120px;padding:0px 16px;color: black;z-index: -1;}
-.rectangle-recruitmentstep2 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:790px;top:45px;padding:0px 16px;color: black;z-index: -1;}
-.rectangle-recruitmentstep3 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:250px;top:25px;padding:0px 16px;color: black;z-index: -1;}
+.rectangle-recruitmentstep1 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:400px;top:270px;padding:0px 16px;color: black;}
+.rectangle-recruitmentstep2 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:450px;top:70px;padding:0px 16px;color: black;}
+.rectangle-recruitmentstep3 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:450px;top:70px;padding:0px 16px;color: black;}
 
 /* ACG Change - Container to display entry fields over an image*/
 .acg-container-blackboard {
@@ -313,3 +315,5 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.acg-bar-button {display:inline-block;width:auto;font-size:14px};
