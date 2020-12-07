@@ -45,11 +45,9 @@ div.lowercase {
   <!-- Recruitment test STEP 1 section -->
   <div class="w3-row w3-padding-64" id="recruitment-test1">
     <div class="w3-col m6 w3-padding-large">
-      <h1 class="w3-center">Tips to find the clues</h1><br>
-      <h5 class="w3-center">Step #1 - Status: COMPLETE</h5>
-      <p class="w3-large">Congratulations! You have found the secret page of the website, succeeding in the first step of our recruitment test.
-        But don't pat yourself on the back just yet: this was the easiest part, by far. Things are going to get tougher from here on in, a lot tougher.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">Second Sparks only hires the very best investigators so we want to make sure you are worthy of carrying the Second Sparks badge.</p>
+      <h1 class="w3-center">Tips to solve the clues</h1><br>
+      <h5 class="w3-center">Are you stuck? Do you need a hint?</h5>
+      <p class="w3-large w3-text-grey w3-hide-medium">To make sure you are not accessing the tips by mistake, type the following sentence:</p>
     </div>
 
     <div class="w3-col l6 w3-padding-round-96 w3-hide-small">
@@ -69,28 +67,9 @@ div.lowercase {
 <!-- Functions -->
 <script>
 
-  function fCheckClues() {
-    setTimeout(function() {fCheckInput("ruin", document.getElementById("id-card1").value, "id-card1");},0000);
-    setTimeout(function() {fCheckInput("balls", document.getElementById("id-card2").value, "id-card2");},1000);
-    setTimeout(function() {fCheckInput("pear", document.getElementById("id-card3").value, "id-card3");},2000);
-    setTimeout(function() {fCheckInput("two", document.getElementById("id-card4").value, "id-card4");},3000);
-  }
-
-  function fCheckInput(card, input, idcard) {
-    if (input == "") {
-      document.getElementById(idcard).value = "X";
-      document.getElementById(idcard).style.color = "red";
-    }
-    else if ((input).toLowerCase() == card) {
-      document.getElementById(idcard).style.color = "green";
-    }
-    else {
-      document.getElementById(idcard).style.color = "red";
-    }
-  }
 
   function fBack() {
-    window.open("recruitmenttest.htm");
+    window.open("recruitmenttest.htm","_self");
   }
 
 </script>
