@@ -13,9 +13,10 @@ h1, h2, h3, h4, h5{
 }
 
 h6{
-  font-family:"Playfair Display";
+  font-family:"Roboto", Georgia, sans-serif;
   margin:10px 0;
   letter-spacing: 2px;
+  font-size:16px;
 }
 
 div.lowercase {
@@ -39,11 +40,11 @@ div.lowercase {
 
 <!-- Header -->
 
-<!-- Page content -->
+<!-- START PAGE CONTENTS-->
 <div class="w3-content" style="max-width:2000px">
 
-  <!-- Tips and tricks -->
-  <div class="w3-row w3-padding-64" id="recruitment-test1">
+  <!-- Tips and tricks - Validation -->
+  <div class="w3-row w3-padding-64" id="clues-tips1">
     <div class="m6 w3-padding-large">
       <h1 class="w3-center">Tips to solve the clues</h1>
       <h5 class="w3-center">Are you stuck? Do you need a hint?</h5>
@@ -60,16 +61,50 @@ div.lowercase {
         <br>
         The tips will reveal spoilers which may ruin the mystery for you.
         <br>
-        To make sure you are not accessing the tips by mistake, you need to type the following sentence:</p>
-        <p class="w3-large w3-text-grey w3-center">i want to see the spoilers</p>
-        <div class= "w3-center" style="font-size:22px">
-          <input type="text" id="idUserInput" name="inputSpoiler" class="w3-center" style="color:#757575" onfocus="this.value=''" size="27" value="(type: I want to read the spoilers)" onkeypress="fSpoiler()">
+        To make sure you are not accessing the tips by mistake, you need to type the following sentence in the box below:</p>
+        <p class="w3-large w3-text-grey w3-center">I want to see the spoilers</p>
+        <div class= "w3-center">
+          <h6><input type="text" id="idUserInput" name="inputSpoiler" class="w3-center" size="27" autofocus placeholder="(type: I want to see the spoilers)" pattern="I want to see the spoilers" oninput="fSpoiler()">
         </div>
+
+        <div class="w3-container">
+          <br>
+          <br>
+          <p>Which card do you need help with?</p>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-black">Select a card</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="#C1" class="w3-bar-item w3-button">Card #1</a>
+              <a href="#C2" class="w3-bar-item w3-button">Card #2</a>
+              <a href="#C3" class="w3-bar-item w3-button">Card #3</a>
+              <a href="#C4" class="w3-bar-item w3-button">Card #4</a>
+              <a href="#C5" class="w3-bar-item w3-button">Card #5</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container">
+          <br>
+          <br>
+          <p>What kind of hint would you like?</p>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button w3-black">Select a hint level</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="#H1" class="w3-bar-item w3-button">A subtle hint</a>
+              <a href="#H2" class="w3-bar-item w3-button">A strong hint</a>
+              <a href="#H3" class="w3-bar-item w3-button">A very obvious hint</a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
-  </div>
 
-<!-- Footer -->
+
+
+
+
 
 <!-- Back button at the bottom of the page -->
   <div class="w3-bottom">
@@ -78,6 +113,7 @@ div.lowercase {
     </div>
   </div>
 
+<!-- END PAGE CONTENTS -->
 </div>
 
 <!-- Functions -->
@@ -87,11 +123,13 @@ div.lowercase {
   }
 
   function fSpoiler() {
-    if ((inputSpoiler).toLowerCase() == "i want to see the spoilers") {
-      document.getElementById(idUserInput).style.color = "green";
+    if (document.getElementById("idUserInput").value == "I want to see the spoilers") {
+      document.getElementById("idUserInput").style.color = "green";
+
+
     }
     else {
-        document.getElementById(idUserInput).style.color = "red";
+      document.getElementById("idUserInput").style.color = "red";
     }
   }
 
