@@ -313,3 +313,48 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+/* ACG for the dropdown lists */
+.acg-hide {
+    max-height: 0 !important;
+}
+
+.acg-dropdown{
+	border: 0.1em solid black;
+	width: 10em;
+	margin-bottom: 1em;
+}
+
+.acg-dropdown .acg-title{
+	margin: .3em .3em .3em .3em;
+	width: 100%;
+}
+
+.acg-dropdown .acg-title .acg-fa-angle-right{
+	float: right;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.acg-dropdown .acg-menu{
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+}
+
+.acg-dropdown .acg-menu .acg-option{
+	margin: .3em .3em .3em .3em;
+	margin-top: 0.3em;
+}
+
+.acg-dropdown .acg-menu .acg-option:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+.acg-pointerCursor:hover{
+	cursor: pointer;
+}
+
+.acg-rotate-90{
+	transform: rotate(90deg);
+}
