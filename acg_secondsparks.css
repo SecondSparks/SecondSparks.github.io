@@ -259,6 +259,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .rectangle-found-bottom {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
 .rectangle-searching-top {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
 .rectangle-searching-bottom {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
+.rectangle-basic {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;padding:0px 16px;color: black;}
 .rectangle-recruitmentstep1 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:250px;top:120px;padding:0px 16px;color: black;z-index: -1;}
 .rectangle-recruitmentstep2 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:790px;top:45px;padding:0px 16px;color: black;z-index: -1;}
 .rectangle-recruitmentstep3 {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left:250px;top:25px;padding:0px 16px;color: black;z-index: -1;}
@@ -312,49 +313,4 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-/* ACG for the dropdown lists */
-.acg-hide {
-    max-height: 0 !important;
-}
-
-.acg-dropdown{
-	border: 0.1em solid black;
-	width: 10em;
-	margin-bottom: 1em;
-}
-
-.acg-dropdown .acg-title{
-	margin: .3em .3em .3em .3em;
-	width: 100%;
-}
-
-.acg-dropdown .acg-title .acg-fa-angle-right{
-	float: right;
-	margin-right: .7em;
-	transition: transform .3s;
-}
-
-.acg-dropdown .acg-menu{
-	transition: max-height .5s ease-out;
-	max-height: 20em;
-	overflow: hidden;
-}
-
-.acg-dropdown .acg-menu .acg-option{
-	margin: .3em .3em .3em .3em;
-	margin-top: 0.3em;
-}
-
-.acg-dropdown .acg-menu .acg-option:hover{
-	background: rgba(0,0,0,0.2);
-}
-
-.acg-pointerCursor:hover{
-	cursor: pointer;
-}
-
-.acg-rotate-90{
-	transform: rotate(90deg);
 }

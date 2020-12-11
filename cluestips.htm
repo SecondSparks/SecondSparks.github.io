@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>SECOND SPARKS - Tips to find the clues</title>
+<title>SECOND SPARKS - Hints to solve the clues</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5{
 }
 
 h6{
-  font-family:"Roboto", Georgia, sans-serif;
+  font-family:"Courier New", Georgia, sans-serif;
   margin:10px 0;
   letter-spacing: 2px;
 }
@@ -42,70 +42,71 @@ div.lowercase {
 <!-- Header -->
 
 <!-- START PAGE CONTENTS-->
-<div class="w3-content" style="max-width:2000px">
+<div class="w3-content" style="max-width:1250px">
 
   <!-- Tips and tricks - Validation -->
   <div class="w3-row w3-padding-64">
     <div class="m6 w3-padding-large">
-      <h1 class="w3-center">Tips to solve the clues</h1>
-      <h5 class="w3-center">Are you stuck? Do you need a hint?</h5>
-      <br>
+      <h1 class="w3-center">Hints to solve the clues</h1>
       <br>
     </div>
-    <div class="w3-col w3-center m6 w3-padding-large w3-hide-medium w3-hide-small">
-        <img src="images\tipsandclues.jpg" class="w3-round w3-image" alt="Tips and clues" style="width:75%;" >
+
+    <div class="rectangle-basic w3-hide-medium w3-hide-small" style="left:390px;top:90px;">
     </div>
-    <div class="rectangle-recruitmentstep2 w3-hide-medium w3-hide-small">
-    </div>
+
+    <div class="w3-col m6 w3-padding-large w3-hide-small w3-hide-medium">
+     <img src="images\tipsandclues.jpg" class="w3-round w3-image" alt="Investigation board" width="600" height="750">
+   </div>
+
     <div class="w3-col m6 w3-padding-large">
+        <h5 class="w3-center">Are you stuck? Do you need a hint?</h5>
         <p class="w3-large w3-text-black">
-        <br>
-        <br>
-        The tips will reveal spoilers which may ruin the mystery for you.
-        <br>
-        To make sure you are not accessing the tips by mistake, you need to type the following sentence in the box below:</p>
+        SPOILER ALERT: The hints will reveal spoilers which may ruin the adventure for you.
+        To make sure you are not accessing the hints by mistake, you need to type the following sentence in the box below:</p>
         <p class="w3-large w3-text-grey w3-center">I want to see the spoilers</p>
       <div class= "w3-center">
-        <h6><input type="text" id="idUserInput" name="inputSpoiler" class="w3-center" size="27" autofocus placeholder="(type: I want to see the spoilers)" pattern="I want to see the spoilers" oninput="fSpoiler()">
+        <h6><input type="text" id="idUserInput" name="inputSpoiler" class="w3-center" size="35" autofocus placeholder="(type: I want to see the spoilers)" pattern="I want to see the spoilers" oninput="fSpoiler()"> </h6>
+        <br>
+        <br>
+        <h4>Select a card and a type of hint</h4>
       </div>
-
-      <div class="w3-container">
-          <br>
-          <p>Which card do you need help with?</p>
-        <div class="w3-dropdown-hover">
-            <button id= "idSelectCard" enabled class="w3-button w3-black">Select a card</button>
-          <div class="w3-dropdown-content w3-bar-block w3-border">
-              <button class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,1)">Card #1</button>
-              <button class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,2)">Card #2</button>
-              <button class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,3)">Card #3</button>
-              <button class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,4)">Card #4</button>
-              <button class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,5)">Card #5</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-container">
-          <p>What kind of hint would you like?</p>
-        <div class="w3-dropdown-hover">
-            <button id="idSelectHint" enabled class="w3-button w3-black">Select a hint level</button>
-          <div class="w3-dropdown-content w3-bar-block w3-border">
-              <button class="w3-bar-item w3-button" onclick="fSelectHint(innerHTML,1)">A subtle hint</button>
-              <button class="w3-bar-item w3-button" onclick="fSelectHint(innerHTML,2)">A strong hint</button>
-              <button class="w3-bar-item w3-button" onclick="fSelectHint(innerHTML,3)">An obvious hint</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-container">
-        <h5><button class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px" onclick="fDisplayHint()">Display the hint</button>
-      </div>
-
-      <div class="w3-col m6 w3-padding-large">
-          <p class="w3-large w3-text-black" id="idHintText"></p>
-      </div>
-
     </div>
+
+    <div class="w3-col m2 w3-padding-large w3-large w3-text-black">
+      <div class="w3-dropdown-hover">
+          <button disabled id="idSelectCard" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px">Select a card</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+            <button disabled id="idCard1" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,1)">Card #1</button>
+            <button disabled id="idCard2" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,2)">Card #2</button>
+            <button disabled id="idCard3" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,3)">Card #3</button>
+            <button disabled id="idCard4" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,4)">Card #4</button>
+            <button disabled id="idCard5" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,5)">Card #5</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col m2 w3-padding-large w3-large w3-text-black">
+      <div class="w3-dropdown-hover">
+        <button disabled id="idSelectHint" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px">Select a type of hint</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+            <button disabled id="idHint1" class="w3-bar-item w3-button" onclick="fSelectHint(innerHTML,1)">A subtle hint</button>
+            <button disabled id="idHint2" class="w3-bar-item w3-button" onclick="fSelectHint(innerHTML,2)">A strong hint</button>
+            <button disabled id="idHint3" class="w3-bar-item w3-button" onclick="fSelectHint(innerHTML,3)">An obvious hint</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col m2 w3-padding-large w3-large w3-text-black">
+        <h5><button disabled id="idDisplayHint" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px" onclick="fDisplayHint()">Display the hint</button>
+    </div>
+
+  <div class="w3-col l6 w3-padding-large m6 w3-center">
+    <h4>Your Hint</h4>
+    <p class="w3-large w3-text-grey " style="border: 1px solid grey; border-radius: 2px; padding-top:10px; padding-bottom:10px" id="idHintText">[Select a CARD and a HINT LEVEL to view the hints]</p>
   </div>
+
+</div>
+
 </div>
 
 <!-- Footer -->
@@ -133,6 +134,7 @@ var vHint = 'vHint initialised';
 
   function fDisplayHint(){
     var vOutput = vCard+"-"+vHint;
+    document.getElementById("idHintText").innerHTML = "";
     switch (vOutput) {
       case '1-1':
         document.getElementById("idHintText").innerHTML = "This plays like Scrabble.";
@@ -179,7 +181,7 @@ var vHint = 'vHint initialised';
         document.getElementById("idHintText").innerHTML = "(a hint for the actual word - Mixed Alphabet)";
         break;
       default:
-        document.getElementById("idHintText").innerHTML = "CODE UNKNOWN";
+        document.getElementById("idHintText").innerHTML = "[Select a CARD and a HINT LEVEL to view the hints]";
         break;
       }
   }
@@ -191,9 +193,18 @@ var vHint = 'vHint initialised';
   function fSpoiler() {
     if (document.getElementById("idUserInput").value == "I want to see the spoilers") {
       document.getElementById("idUserInput").style.color = "green";
-      document.getElementById("idSelectCard").disabled = false;
       document.getElementById("idSelectCard").focus();
-      document.getElementById("idSelectTip").disabled = false;
+      document.getElementById("idSelectCard").disabled = false;
+      document.getElementById("idCard1").disabled = false;
+      document.getElementById("idCard2").disabled = false;
+      document.getElementById("idCard3").disabled = false;
+      document.getElementById("idCard4").disabled = false;
+      document.getElementById("idCard5").disabled = false;
+      document.getElementById("idSelectHint").disabled = false;
+      document.getElementById("idHint1").disabled = false;
+      document.getElementById("idHint2").disabled = false;
+      document.getElementById("idHint3").disabled = false;
+      document.getElementById("idDisplayHint").disabled = false;
     }
     else {
       document.getElementById("idUserInput").style.color = "red";
