@@ -59,7 +59,7 @@ div.lowercase {
    </div>
 
     <div class="w3-col m6 w3-padding-large">
-        <h5 class="w3-center">Are you stuck? Do you need a hint?</h5>
+        <h4 class="w3-center">Are you stuck? Do you need a hint?</h4>
         <p class="w3-large w3-text-black">
         SPOILER ALERT: The hints will reveal spoilers which may ruin the adventure for you.
         To make sure you are not accessing the hints by mistake, you need to type the following sentence in the box below:</p>
@@ -72,9 +72,9 @@ div.lowercase {
       </div>
     </div>
 
-    <div class="w3-col m2 w3-padding-large w3-large w3-text-black">
+    <div class="w3-col m2" style="padding-left:55px">
       <div class="w3-dropdown-hover">
-          <button disabled id="idSelectCard" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px">Select a card</button>
+        <button disabled id="idSelectCard" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px">Select a card</button>
         <div class="w3-dropdown-content w3-bar-block w3-border">
             <button disabled id="idCard1" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,1)">Card #1</button>
             <button disabled id="idCard2" class="w3-bar-item w3-button" onclick="fSelectCard(innerHTML,2)">Card #2</button>
@@ -85,7 +85,7 @@ div.lowercase {
       </div>
     </div>
 
-    <div class="w3-col m2 w3-padding-large w3-large w3-text-black">
+    <div class="w3-col m2">
       <div class="w3-dropdown-hover">
         <button disabled id="idSelectHint" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px">Select a type of hint</button>
         <div class="w3-dropdown-content w3-bar-block w3-border">
@@ -96,12 +96,16 @@ div.lowercase {
       </div>
     </div>
 
-    <div class="w3-col m2 w3-padding-large w3-large w3-text-black">
-        <h5><button disabled id="idDisplayHint" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px" onclick="fDisplayHint()">Display the hint</button>
+    <div class="w3-col m2">
+      <div class="w3-dropdown-hover">
+        <button disabled id="idDisplayHint" class="w3-light-grey w3-button" style="letter-spacing:2px; font-size:14px" onclick="fDisplayHint()">Display the hint</button>
+      </div>
     </div>
 
   <div class="w3-col l6 w3-padding-large m6 w3-center">
-    <h4>Your Hint</h4>
+    <br>
+    <br>
+    <h4>Your hint</h4>
     <p class="w3-large w3-text-grey " style="border: 1px solid grey; border-radius: 2px; padding-top:10px; padding-bottom:10px" id="idHintText">[Select a CARD and a HINT LEVEL to view the hints]</p>
   </div>
 
@@ -122,14 +126,17 @@ var vCard = 'vCard initialised';
 var vHint = 'vHint initialised';
 
 /* Functions */
-  function fSelectCard(card,id){
-    document.getElementById("idSelectCard").innerHTML = card;
+  function fSelectCard(choice,id){
+    document.getElementById("idSelectCard").innerHTML = choice;
     vCard = id;
+    document.getElementById("idHintText").innerHTML = ' ... '
   }
 
-  function fSelectHint(hint,id){
-    document.getElementById("idSelectHint").innerHTML = hint;
+  function fSelectHint(choice,id){
+    document.getElementById("idSelectHint").innerHTML = choice;
     vHint = id;
+    document.getElementById("idHintText").innerHTML = ' ... '
+
   }
 
   function fDisplayHint(){
@@ -177,6 +184,7 @@ var vHint = 'vHint initialised';
         break;
       case '5-2':
         document.getElementById("idHintText").innerHTML = "A L P H A B E T / A B E T A L P H";
+        break;
       case '5-3':
         document.getElementById("idHintText").innerHTML = "(a hint for the actual word - Mixed Alphabet)";
         break;
