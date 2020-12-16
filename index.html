@@ -4,24 +4,26 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="acg_secondsparks.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5{
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-
-h6{
-  font-family:"Roboto", Georgia, sans-serif;
-  margin:10px 0;
-  letter-spacing: 2px;
-}
-
-</style>
 
 <head>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="acg_secondsparks.css">
+
+  <style>
+    body {font-family: "Times New Roman", Georgia, Serif;}
+    h1, h2, h3, h4, h5{
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+    }
+
+    h6{
+      font-family:"Roboto", Georgia, sans-serif;
+      margin:10px 0;
+      letter-spacing: 2px;
+    }
+
+  </style>
 </head>
 
 
@@ -44,13 +46,13 @@ h6{
 <!-- Header -->
 <div class="w3-display-container w3-light-black" style="height:300px;" id="home">
   <div class="row">
-    <div class="column-three">
-      <img src="images\sparks01.jpg" alt="Sparks" style="width:75%">
+    <div class="column-three w3-hide-medium w3-hide-small">
+      <img src="images\sparks01.jpg" alt="Sparks" style="width:300px; max-width:300px">
     </div>
     <div class="column-three">
     </div>
-    <div class="column-three">
-      <img src="images\sparks01_flip.jpg" alt="Sparks" style="width:75%">
+    <div class="column-three w3-hide-medium w3-hide-small">
+      <img src="images\sparks01_flip.jpg" alt="Sparks" style="width:300px; max-width:300px">
     </div>
   </div>
   <div class="w3-display-middle w3-margin-top w3-center">
@@ -65,11 +67,22 @@ h6{
 
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
-    <div class="w3-col m6 w3-padding-large w3-hide-small w3-hide-medium">
-     <img src="images\investigationboard.jpg" class="w3-round w3-image" alt="Investigation board" width="600" height="750">
+    <div class="w3-col m6 w3-padding-large">
+     <img src="images\investigationboard.jpg" usemap="#investigationboard" class="w3-round w3-image" alt="Investigation board" width="600" height="750">
+     <map name="investigationboard">
+      <area shape="rect" coords="60,0,135,50" alt="Peru" href="recruitmenttest.html">
+    </map>
     </div>
     <div class="rectangle-left w3-hide-small w3-hide-medium">
     </div>
+
+<!--
+    <div style="position: relative;">
+  <img src="background-image.png" style="width: 100%; height: auto;">
+  <a href="/link1"><div style="position: absolute; left: 15%; top: 20%; width: 12%; height: 8%; background-color: rgba(0, 0, 0, .25);"></div></a>
+  <a href="/link2"><div style="position: absolute; left: 52%; top: 38%; width: 14%; height: 20%; background-color: rgba(0, 0, 0, .25);"></div></a>
+</div>
+ -->
 
     <div class="w3-col m6 w3-padding-large">
       <h1 class="w3-center">About Second Sparks</h1><br>
@@ -97,7 +110,6 @@ h6{
       <p class="w3-text-grey">Our investigators are the Second Sparks that we recruit and train. They have many years of experience, they are specialised in an area, and they are impossible to identify.</p><br>
       <h4>New Recruits</h4>
       <p class="w3-text-grey">We are always looking for more Second Sparks to join our team. When we find someone with exceptional skills we test them and if they are good enough they join our team and become one of our Sparks. We do not accept applications: if we hear from someone who is likely to meet our very high standards of competence we'll contact them directly.</p>
-      <a href="recruitmenttest.html" >Click me to access the password page.</a></p>
     </div>
 
     <div class="w3-col l6 w3-padding-large w3-hide-small w3-hide-medium">
@@ -137,28 +149,28 @@ h6{
     <div class="w3-col.s3 l6 w3-padding-large">
       <div class="row">
         <div class="column-four">
-          <img src="images\lostpets_goat.jpg" class="w3-round w3-card" alt="Goat" style="width:200px;height:150px;">
+          <img src="images\lostpets_goat.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Goat" style="width:200px;height:150px;">
           <h4>Lost Pet | <span style="color:#757575;font-size:15px;letter-spacing:1px">Goatamine</span></h4>
           <div class="rectangle-found-top" >
             <h6>FOUND!</h6>
           </div>
         </div>
         <div class="column-four">
-          <img src="images\lostpets_rabbit.jpg" class="w3-round w3-card" alt="Rabbit" style="width:200px;height:150px;">
+          <img src="images\lostpets_rabbit.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Rabbit" style="width:200px;height:150px;">
           <h4>Lost Pet | <span style="color:#757575;font-size:15px;letter-spacing:1px">Bunnykins</span></h4>
           <div class="rectangle-found-top" >
             <h6>FOUND!</h6>
           </div>
         </div>
         <div class="column-four">
-          <img src="images\lostpets_dog.jpg" class="w3-round w3-card" alt="Dog" style="width:200px;height:150px;">
+          <img src="images\lostpets_dog.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Dog" style="width:200px;height:150px;">
           <h4>Lost Pet | <span style="color:#757575;font-size:15px;letter-spacing:1px">Barry</span></h4>
           <div class="rectangle-found-top" >
             <h6>FOUND!</h6>
           </div>
         </div>
         <div class="column-four">
-          <img src="images\lostpets_lizard.jpg" class="w3-round w3-card" alt="Lizard" style="width:200px;height:150px;">
+          <img src="images\lostpets_lizard.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Lizard" style="width:200px;height:150px;">
           <h4>Lost Pet | <span style="color:#757575;font-size:15px;letter-spacing:1px">Lizzy</span></h4>
           <div class="rectangle-found-top" >
             <h6>FOUND!</h6>
@@ -170,28 +182,28 @@ h6{
       <div class="w3-col.s3 l6 w3-padding-small">
         <div class="row">
           <div class="column-four">
-            <img src="images\losttreasures_moonrock.jpg" class="w3-round w3-card" alt="Rock" style="width:200px;height:150px;">
+            <img src="images\losttreasures_moonrock.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Rock" style="width:200px;height:150px;">
             <h4>Stolen | <span style="color:#757575;font-size:15px;letter-spacing:1px">Moon rock</span></h4>
             <div class="rectangle-found-bottom" >
               <h6>FOUND!</h6>
             </div>
           </div>
           <div class="column-four">
-            <img src="images\losttreasures_crown.jpg" class="w3-round w3-card" alt="Crown" style="width:200px;height:150px;">
+            <img src="images\losttreasures_crown.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Crown" style="width:200px;height:150px;">
             <h4>Stolen | <span style="color:#757575;font-size:15px;letter-spacing:1px">King's crown</span></h4>
             <div class="rectangle-found-bottom" >
               <h6>FOUND!</h6>
             </div>
           </div>
           <div class="column-four">
-            <img src="images\losttreasures_statue.jpg" class="w3-round w3-card" alt="Statue" style="width:200px;height:150px;">
+            <img src="images\losttreasures_statue.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Statue" style="width:200px;height:150px;">
             <h4>Stolen | <span style="color:#757575;font-size:15px;letter-spacing:1px">Inuit sculpture</span></h4>
             <div class="rectangle-searching-bottom" >
               <h6>STOLEN</h6>
             </div>
           </div>
           <div class="column-four">
-            <img src="images\losttreasures_mask.jpg" class="w3-round w3-card" alt="Mask" style="width:200px;height:150px;">
+            <img src="images\losttreasures_mask.jpg" class="w3-round w3-card w3-hide-medium w3-hide-small" alt="Mask" style="width:200px;height:150px;">
             <h4>Stolen | <span style="color:#757575;font-size:15px;letter-spacing:1px">African mask</span></h4>
             <div class="rectangle-found-bottom" >
               <h6>FOUND!</h6>

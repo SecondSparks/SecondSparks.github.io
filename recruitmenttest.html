@@ -45,8 +45,7 @@ div.lowercase {
 
   <!-- Recruitment test STEP 1 section -->
   <div class="w3-row w3-padding-64" id="recruitment-test1">
-    <div class="rectangle-recruitmentstep1 w3-hide-small w3-hide-medium">
-    </div>
+      <div class="rectangle-recruitmentstep w3-hide-small w3-hide-medium" style="position:relative;left:470px;top:188px"></div>
       <h1 class="w3-center">Recruitment Test</h1>
       <br>
       <br>
@@ -57,7 +56,7 @@ div.lowercase {
         <br>
         <br>
         <br>
-        <p class="w3-large">Congratulations! You have found the secret page of the website, succeeding in the first step of our recruitment test.
+        <p class="w3-large">Congratulations! You have found the hidden page of the website, succeeding in the first step of our recruitment test.
           But don't pat yourself on the back just yet: this was the easiest part, by far. Things are going to get tougher from here on in, a lot tougher.</p>
         <p class="w3-large w3-text-grey">Second Sparks only hires the very best investigators so we want to make sure you are worthy of carrying the Second Sparks badge.</p>
       </div>
@@ -70,35 +69,38 @@ div.lowercase {
 
   <!-- Recruitment test STEP 2 section -->
   <div class="w3-row w3-padding-16" id="recruitment-test2">
-    <div class="rectangle-recruitmentstep2 w3-hide-small w3-hide-medium">
-    </div>
+    <div class="rectangle-recruitmentstep w3-hide-small w3-hide-medium" style="position:relative;left:470px;top:70px"></div>
     <h5 class="w3-center">Step #2 - SOLVE THE CLUES TO THE SECRET LOCATION</h5>
     <h5 class="w3-center">Status: IN PROGRESS</h5>
     <div class="w3-col m6 w3-padding-32">
-      <a href="images/secretmessage.pdf" download </a>
-        <img src="images/secretmessage.jpg" class="w3-round w3-image w3-center" alt="Secret Message" position="relative" style="width:100%">
-      </a>
+        <!-- <a href="images/secretmessage.pdf" download> -->
+        <br>
+        <br>
+        <br>
+        <img src="images/secretmessage.png" class="w3-round w3-image w3-center" alt="Secret Message" position="relative" style="width:100%">
+        <!-- </a> -->
 
        <br>
        <br>
        <div class="acg-container-blackboard">
-           <input type="text" id="id-card1" name="card1" value="Card1" class="acg-input-block" style="bottom: 315px; left: 260px;">
-           <input type="text" id="id-card2" name="card2" value="Card2" class="acg-input-block" style="bottom: 270px; left: 360px;">
-           <input type="text" id="id-card3" name="card3" value="Card3" class="acg-input-block" style="bottom: 175px; left: 260px;">
-           <input type="text" id="id-card4" name="card4" value="Card4" class="acg-input-block" style="bottom: 20px; left: 60px;">
-           <h6><button class="w3-display-left w3-light-grey w3-button" style="letter-spacing:2px;left:0%;top:5px" onclick="fCluesTips()" >Get some hints to solve the clues</button>
-           <h6><button class="w3-display-right w3-light-grey w3-button" style="letter-spacing:2px;right:0%;top:5px" onclick="fCheckClues()">Test the clues you found</button>
+           <input type="text" id="id-card1" name="card1" value="" size="12" class="acg-input-block" style="bottom: 200px; left: 260px;">
+           <input type="text" id="id-card2" name="card2" value="" size="5" class="acg-input-block" style="bottom: 150px; left: 60px;">
+           <input type="text" id="id-card3" name="card3" value="" size="7" class="acg-input-block" style="bottom: 95px; left: 20px;">
+           <input type="text" id="id-card4" name="card4" value="" size="3" class="acg-input-block" style="bottom: 90px; left: 450px;">
+           <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="bottom: 40px; left: 150px;">
+           <h6><button class="w3-display-left w3-light-grey w3-button" style="letter-spacing:2px;left:0%;top:5px" onclick="fCluesTips()" >Get hints to solve the clues</button>
+           <h6><button class="w3-display-right w3-light-grey w3-button" style="letter-spacing:2px;right:0%;top:5px" onclick="fCheckClues()">Check the words you found</button>
        </div>
 
     </div>
     <div class="w3-col m6 w3-padding-large">
       <br>
       <br>
-      <p class="w3-large"> Every week for 4 weeks you will receive a postcard with an encrypted clue. Once decrypted, each clue replaces one of the empty spaces in the sentence on the black board.</p>
-      <p class="w3-large"> Once complete, the sentence will give you a location on Google Maps where you will find the name of a color. </p>
-      <p class="w3-large w3-text-grey">Click the whiteboard to download a copy of the blackboard text to work offline.
-        <br>
-       If you need help with the clues, use the buttons to test that you found the correct clues or to get some hints. </p>
+      <p class="w3-large"> Every week for 4 weeks you will receive a postcard with an encrypted clue. Once decrypted, each clue will give you a word to replace one of the empty spaces in the sentence on the black board.</p>
+      <p class="w3-large"> Once complete, the sentence will give you a location on Google Maps where you will find the answser to the question. </p>
+      <br>
+      <p class="w3-large w3-text-grey"> You can type the missing words on the blackboard (use either lowercase or uppercase letters) then click the button to see of you guessed correctly. </p>
+      <p class="w3-large w3-text-grey"> If you need help, use the buttons to get some hints. </p>
 
     </div>
 
@@ -107,14 +109,13 @@ div.lowercase {
 
   <!-- Recruitment test STEP 3 section -->
   <div class="w3-row w3-padding-64" id="recruitment-test3">
-    <div class="rectangle-recruitmentstep3 w3-hide-small w3-hide-medium">
-    </div>
-      <h5 class="w3-center">Step #3 - VERIFY THE SECRET LOCATION</h5>
-      <h5 class="w3-center">and receive your reward</h5>
+    <div class="rectangle-recruitmentstep w3-hide-small w3-hide-medium" style="position:relative;left:450px;top:73px"></div>
+    <h5 class="w3-center">Step #3 - VERIFY THE SECRET LOCATION</h5>
+    <h5 class="w3-center">and receive your reward</h5>
     <div class="w3-col m6 w3-padding-large">
-      <p class="w3-large"> When you think you have found the name of the color, send an email to our CEO with the subject section of the email containing the name of the color you found and the unique ID you were given in the first letter you received.</p>
-      <p class="w3-large w3-text-grey" >If the color is correct, you will be formally hired as one of our Second Sparks and you will receive a badge and a contract.</p>
-      <p class="w3-large w3-text-grey" >If the color is incorrect, don't worry: a good investigator knows they will get it wrong sometimes and are willing to backtrack and try again. You can send your answer more than once!</p>
+      <p class="w3-large"> When you think you have found the answser to the question, send an email to our CEO with the subject line of the email containing the answer you found and the unique ID you were given in the first letter you received.</p>
+      <p class="w3-large w3-text-grey" >If the answer is correct, you will be formally hired as one of our Second Sparks and you will receive a badge and a contract.</p>
+      <p class="w3-large w3-text-grey" >If the answer is incorrect, don't worry: a good investigator knows they will get it wrong sometimes and are willing to backtrack and try again. You can send your answer more than once!</p>
     </div>
 
     <div class="w3-col l6 w3-padding-round-16 w3-hide-small w3-hide-medium">
@@ -133,22 +134,23 @@ div.lowercase {
 <script>
 
   function fCheckClues() {
-    setTimeout(function() {fCheckInput("ruin", document.getElementById("id-card1").value, "id-card1");},0000);
-    setTimeout(function() {fCheckInput("balls", document.getElementById("id-card2").value, "id-card2");},1000);
-    setTimeout(function() {fCheckInput("pear", document.getElementById("id-card3").value, "id-card3");},2000);
-    setTimeout(function() {fCheckInput("two", document.getElementById("id-card4").value, "id-card4");},3000);
+    setTimeout(function() {fCheckInput("distance in km", document.getElementById("id-card1").value, "id-card1");},0000);
+    setTimeout(function() {fCheckInput("Moskva", document.getElementById("id-card2").value, "id-card2");},1000);
+    setTimeout(function() {fCheckInput("bear sign", document.getElementById("id-card3").value, "id-card3");},2000);
+    setTimeout(function() {fCheckInput("exit", document.getElementById("id-card4").value, "id-card4");},3000);
+    setTimeout(function() {fCheckInput("Airport in Svalbard", document.getElementById("id-card5").value, "id-card5");},4000);
   }
 
   function fCheckInput(card, input, idcard) {
     if (input == "") {
       document.getElementById(idcard).value = "(missing)";
-      document.getElementById(idcard).style.color = "red";
+      document.getElementById(idcard).style.color = "#ff4000";
     }
     else if ((input).toLowerCase() == card) {
-      document.getElementById(idcard).style.color = "green";
+      document.getElementById(idcard).style.color = "	#6B8E23";
     }
     else {
-      document.getElementById(idcard).style.color = "red";
+      document.getElementById(idcard).style.color = "#ff4000";
     }
 
   }
