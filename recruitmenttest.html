@@ -83,13 +83,13 @@ div.lowercase {
        <br>
        <br>
        <div class="acg-container-blackboard">
-           <input type="text" id="id-card1" name="card1" value="" size="12" class="acg-input-block" style="bottom: 200px; left: 260px;">
-           <input type="text" id="id-card2" name="card2" value="" size="5" class="acg-input-block" style="bottom: 150px; left: 60px;">
-           <input type="text" id="id-card3" name="card3" value="" size="7" class="acg-input-block" style="bottom: 95px; left: 20px;">
-           <input type="text" id="id-card4" name="card4" value="" size="3" class="acg-input-block" style="bottom: 90px; left: 450px;">
-           <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="bottom: 40px; left: 150px;">
-           <h6><button class="w3-display-left w3-light-grey w3-button" style="letter-spacing:2px;left:0%;top:5px" onclick="fCluesTips()" >Get hints to solve the clues</button>
-           <h6><button class="w3-display-right w3-light-grey w3-button" style="letter-spacing:2px;right:0%;top:5px" onclick="fCheckClues()">Check the words you found</button>
+           <input type="text" id="id-card1" name="card1" value="" size="12" class="acg-input-block" style="bottom: 200px; left: 260px;" onclick="fClearClue(id)";>
+           <input type="text" id="id-card2" name="card2" value="" size="6" class="acg-input-block" style="bottom: 150px; left: 60px;" onclick="fClearClue(id)";>
+           <input type="text" id="id-card3" name="card3" value="" size="7" class="acg-input-block" style="bottom: 95px; left: 20px;" onclick="fClearClue(id)";>
+           <input type="text" id="id-card4" name="card4" value="" size="6" class="acg-input-block" style="bottom: 90px; left: 435px;" onclick="fClearClue(id)";>
+           <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="bottom: 40px; left: 150px;" onclick="fClearClue(id)";>
+           <h6><button id="idCluesTips" class="w3-display-left w3-light-grey w3-button" style="letter-spacing:2px;left:0%;top:5px" onclick="fCluesTips()" >Get hints to solve the clues</button>
+           <h6><button id="idCheckClues" class="w3-display-right w3-light-grey w3-button" style="letter-spacing:2px;right:0%;top:5px" onclick="fCheckClues()">Check the words you found</button>
        </div>
 
     </div>
@@ -134,20 +134,40 @@ div.lowercase {
 <script>
 
   function fCheckClues() {
-    setTimeout(function() {fCheckInput("distance in km", document.getElementById("id-card1").value, "id-card1");},0000);
-    setTimeout(function() {fCheckInput("Moskva", document.getElementById("id-card2").value, "id-card2");},1000);
-    setTimeout(function() {fCheckInput("bear sign", document.getElementById("id-card3").value, "id-card3");},2000);
-    setTimeout(function() {fCheckInput("exit", document.getElementById("id-card4").value, "id-card4");},3000);
-    setTimeout(function() {fCheckInput("Airport in Svalbard", document.getElementById("id-card5").value, "id-card5");},4000);
+    document.getElementById("idCheckClues").disabled = true;
+    document.getElementById("idCluesTips").disabled = true;
+    document.getElementById("idCheckClues").innerHTML = "Checking the words ...";
+    fResetClues();
+    setTimeout(function() {fCheckInput("distance in km", document.getElementById("id-card1").value, "id-card1");},1000);
+    setTimeout(function() {fCheckInput("moskva", document.getElementById("id-card2").value, "id-card2");},2000);
+    setTimeout(function() {fCheckInput("polar bear crossing sign", document.getElementById("id-card3").value, "id-card3");},3000);
+    setTimeout(function() {fCheckInput("exit", document.getElementById("id-card4").value, "id-card4");},4000);
+    setTimeout(function() {fCheckInput("airport in svalbard", document.getElementById("id-card5").value, "id-card5");},5000);
+    setTimeout(function() {document.getElementById("idCheckClues").disabled = false;},5000);
+    setTimeout(function() {document.getElementById("idCheckClues").innerHTML = "Check the words you found";},5000);
+    setTimeout(function() {document.getElementById("idCluesTips").disabled = false;},5000);
   }
 
-  function fCheckInput(card, input, idcard) {
+  function fClearClue(clue){
+    document.getElementById(clue).style.color  = "#ffffcc";
+    document.getElementById(clue).value = "";
+  }
+
+  function fResetClues(){
+    document.getElementById("id-card1").style.color  = "#ffffcc";
+    document.getElementById("id-card2").style.color  = "#ffffcc";
+    document.getElementById("id-card3").style.color  = "#ffffcc";
+    document.getElementById("id-card4").style.color  = "#ffffcc";
+    document.getElementById("id-card5").style.color  = "#ffffcc";
+  }
+
+  function fCheckInput(answer, input, idcard) {
     if (input == "") {
       document.getElementById(idcard).value = "(missing)";
       document.getElementById(idcard).style.color = "#ff4000";
     }
-    else if ((input).toLowerCase() == card) {
-      document.getElementById(idcard).style.color = "	#6B8E23";
+    else if ((input).toLowerCase() == answer) {
+      document.getElementById(idcard).style.color = "	#32CD32";
     }
     else {
       document.getElementById(idcard).style.color = "#ff4000";
