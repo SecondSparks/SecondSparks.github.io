@@ -83,11 +83,11 @@ div.lowercase {
        <br>
        <br>
        <div class="acg-container-blackboard">
-           <input type="text" id="id-card1" name="card1" value="" size="12" class="acg-input-block" style="bottom: 200px; left: 260px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-           <input type="text" id="id-card2" name="card2" value="" size="6" class="acg-input-block" style="bottom: 150px; left: 60px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-           <input type="text" id="id-card3" name="card3" value="" size="7" class="acg-input-block" style="bottom: 95px; left: 20px;"onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-           <input type="text" id="id-card4" name="card4" value="" size="6" class="acg-input-block" style="bottom: 90px; left: 435px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-           <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="bottom: 40px; left: 150px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+           <input type="text" id="id-card1" name="card1" value="" size="20" class="acg-input-block" style="bottom: 235px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+           <input type="text" id="id-card2" name="card2" value="" size="10" class="acg-input-block" style="bottom: 185px; left: 90px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+           <input type="text" id="id-card3" name="card3" value="" size="20" class="acg-input-block" style="bottom: 145px; left: 90px;"onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+           <input type="text" id="id-card4" name="card4" value="" size="10" class="acg-input-block" style="bottom: 100px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+           <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="bottom: 50px; left: 105px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
            <h6><button id="idCluesTips" class="w3-display-left w3-light-grey w3-button" style="letter-spacing:2px;left:0%;top:5px" onclick="fCluesTips()" >Get hints to solve the clues</button>
            <h6><button id="idCheckClues" class="w3-display-right w3-light-grey w3-button" style="letter-spacing:2px;right:0%;top:5px" onclick="fCheckClues()">Check the words you found</button>
        </div>
@@ -99,7 +99,7 @@ div.lowercase {
       <p class="w3-large"> Every week for 5 weeks you will receive a postcard with an encrypted clue. Once decrypted, each clue will give you a word to replace one of the empty spaces in the sentence on the black board.</p>
       <p class="w3-large"> Once complete, the sentence will give you a location on Google Maps where you will find the answser to the question. </p>
       <br>
-      <p class="w3-large w3-text-grey"> You can type the missing words on the blackboard (use either lowercase or uppercase letters) then click the button to check your answers. </p>
+      <p class="w3-large w3-text-grey"> You can type the missing words on the blackboard (use either lowercase or uppercase letters) then click the button to check your answers: green means the word is correct!</p>
       <p class="w3-large w3-text-grey"> If you need help, use the button to get hints (we won't reveal the answer). </p>
 
     </div>
@@ -165,6 +165,7 @@ div.lowercase {
     fResetClue ("id-card2");
     fResetClue ("id-card3");
     fResetClue ("id-card4");
+    fResetClue ("id-card5");
   }
 
   function fCheckInput(answer, input, idcard) {
@@ -174,7 +175,9 @@ div.lowercase {
     }
     else if ((input).toLowerCase() == answer) {
       document.getElementById(idcard).style.color = "	#32CD32";
-    }
+      document.getElementById(idcard).style.color = "	#9ACD32";
+      document.getElementById(idcard).style.color = "	#006400";
+        }
     else {
       document.getElementById(idcard).style.color = "#ff4000";
     }
