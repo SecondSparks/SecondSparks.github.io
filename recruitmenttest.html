@@ -69,8 +69,8 @@ div.lowercase {
 
 
   <!-- Recruitment test STEP 2 section -->
-  <div class="w3-row w3-padding-16" id="recruitment-test2">
-    <div class="highlightbar-recruitmentstep" style="position:relative;left:470px;top:70px">
+  <div class="w3-row w3-padding-16" style="position:relative" id="recruitment-test2">
+    <div class="highlightbar-recruitmentstep" style="position:absolute;left:470px;top:70px">
     </div>
 
     <!-- <div class=" w3-hide-small w3-hide-medium" style="position:relative;left:470px;top:70px"></div> -->
@@ -81,12 +81,12 @@ div.lowercase {
         <br>
         <br>
           <img src="images/secretmessage.png" class="w3-round w3-image w3-center" alt="Black board with secret message" style="width:100%">
-          <div class="acg-container-blackboard" position:"relative">
-            <input type="text" id="id-card1" name="card1" value="" size="18" class="acg-input-block" style="bottom: 265px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card2" name="card2" value="" size="8" class="acg-input-block" style="bottom: 215px; left: 90px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card3" name="card3" value="" size="18" class="acg-input-block" style="bottom: 175px; left: 90px;"onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card4" name="card4" value="" size="10" class="acg-input-block" style="bottom: 130px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="bottom: 80px; left: 105px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+          <div class="acg-container-blackboard">
+            <input type="text" id="id-card1" name="card1" value="" size="18" class="acg-input-block" style="position:relative;bottom: 265px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+            <input type="text" id="id-card2" name="card2" value="" size="8" class="acg-input-block" style="position:relative;bottom: 215px; left: 90px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+            <input type="text" id="id-card3" name="card3" value="" size="18" class="acg-input-block" style="position:relative;bottom: 175px; left: 90px;"onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+            <input type="text" id="id-card4" name="card4" value="" size="10" class="acg-input-block" style="position:relative;bottom: 130px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+            <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="position:relative;bottom: 80px; left: 105px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
 
             <h6>
             <button id="idCluesTips" class="w3-light-grey w3-button" style="letter-spacing:2px" onclick="fCluesTips()" >Get hints to solve the clues</button>
