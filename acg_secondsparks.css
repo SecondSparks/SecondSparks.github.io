@@ -283,7 +283,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 .acg-container-blackboard {
-    position: relative;
+    position: absolute;
     font-family: 'Mansalva', Georgia;
     color: #ffffcc;
   }
