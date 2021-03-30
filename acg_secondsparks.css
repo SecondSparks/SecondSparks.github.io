@@ -253,13 +253,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .row::after {content: ""; clear: both; display: table;}
 
 /* ACG Change - Blue rectangles */
-.rectangle-left {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left: 300px;top: 100px;}
-.rectangle-right {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left: 350px;top: 100px;}
-.rectangle-found-top {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
-.rectangle-found-bottom {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
-.rectangle-searching-top {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
-.rectangle-searching-bottom {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
-.rectangle-basic {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;padding:0px 16px;color: black;}
+.highlightbar-left {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left: 300px;top: 100px;}
+.highlightbar-right {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;left: 350px;top: 100px;}
+.highlightbar-found-top {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
+.highlightbar-found-bottom {height: 20px;width: 100px;background-color: #3FFFEF;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
+.highlightbar-searching-top {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-50px;top:-100px;padding:0px 16px;color: black;}
+.highlightbar-searching-bottom {height: 20px;width: 100px;background-color: #ff6c3f;opacity: 1;position: relative;left:-35px;top:-100px;padding:0px 16px;color: black;}
+.highlightbar-basic {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;position: relative;padding:0px 16px;color: black;}
 .highlightbar-recruitmentstep {height: 20px;width: 400px;background-color: #3FFFEF;opacity: 0.5;padding:0px 16px;color: black;z-index: -1;}
 
 /* ACG Change - Container to display entry fields over an image*/
