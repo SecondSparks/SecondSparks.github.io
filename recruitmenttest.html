@@ -22,6 +22,8 @@ div.lowercase {
   text-transform: lowercase;
 }
 
+
+
 </style>
 
 <head>
@@ -45,7 +47,6 @@ div.lowercase {
   <div class="w3-row w3-padding-64" id="recruitment-test1">
       <div class="highlightbar-recruitmentstep" style="position:relative;left:470px;top:188px">
       </div>
-      <!-- <div class="highlightbar-recruitmentstep w3-hide-small w3-hide-medium" style="position:relative;left:470px;top:188px"></div> -->
       <h1 class="w3-center">Recruitment Test</h1>
       <br>
       <br>
@@ -63,7 +64,6 @@ div.lowercase {
       </div>
 
       <div class="w3-col l6 w3-padding-round-32 ">
-        <!-- <div class="w3-col l6 w3-padding-round-32 w3-hide-small w3-hide-medium"> -->
         <img src="images\spyexam03.jpg" class="w3-round" alt="Spy Exam" style="width:100%;height:auto" >
       </div>
     </div>
@@ -74,25 +74,32 @@ div.lowercase {
     <div class="highlightbar-recruitmentstep" style="position:relative;left:470px;top:70px">
     </div>
 
-    <!-- <div class=" w3-hide-small w3-hide-medium" style="position:relative;left:470px;top:70px"></div> -->
     <h5 class="w3-center">Step #2 - SOLVE THE CLUES TO COMPLETE THE QUESTION</h5>
     <h5 class="w3-center">Status: IN PROGRESS</h5>
     <div class="w3-col m6 w3-padding-32">
-        <br>
-        <br>
-        <br>
-          <img src="images/secretmessage.png" class="w3-round w3-image w3-center" alt="Black board with secret message" style="width:100%">
-          <div class="acg-container-blackboard">
-            <input type="text" id="id-card1" name="card1" value="" size="18" class="acg-input-block" style="position:relative;bottom: 250px; left: 230px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card2" name="card2" value="" size="8" class="acg-input-block" style="position:relative;bottom: 205px; left: -210px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card3" name="card3" value="" size="18" class="acg-input-block" style="position:relative;bottom: 210px; left: 90px;"onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card4" name="card4" value="" size="10" class="acg-input-block" style="position:relative;bottom: 160px; left: -60px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
-            <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" style="position:relative;bottom: 158px; left: 105px;" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+      <br>
+      <div class="acg-container-blackboard">
+        <img src="images/secretmessage.png" class="w3-round w3-image w3-center" alt="Black board with secret message" style="width:100%">
+        <div class="acg-answer1">
+          <input type="text" id="id-card1" name="card1" value="" size="18" class="acg-input-block" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+        </div>
+        <div class="acg-answer2">
+          <input type="text" id="id-card2" name="card2" value="" size="8" class="acg-input-block" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+        </div>
+        <div class="acg-answer3">
+          <input type="text" id="id-card3" name="card3" value="" size="18" class="acg-input-block" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+        </div>
+        <div class="acg-answer4">
+          <input type="text" id="id-card4" name="card4" value="" size="10" class="acg-input-block" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+        </div>
+        <div class="acg-answer5">
+          <input type="text" id="id-card5" name="card5" value="" size="20" class="acg-input-block" onfocus="fResetClue(id)" onclick="fClearClue(id)";>
+        </div>
+      </div>
+      <h6>
+      <button id="idCluesTips" class="w3-light-grey w3-button" style="letter-spacing:2px" onclick="fCluesTips()" >Get hints to solve the clues</button>
+      <button id="idCheckClues" class="w3-light-grey w3-button" style="letter-spacing:2px" onclick="fCheckClues()">Check the words you found</button>
 
-            <h6>
-            <button id="idCluesTips" class="w3-light-grey w3-button" style="letter-spacing:2px" onclick="fCluesTips()" >Get hints to solve the clues</button>
-            <button id="idCheckClues" class="w3-light-grey w3-button" style="letter-spacing:2px" onclick="fCheckClues()">Check the words you found</button>
-          </div>
     </div>
 
     <div class="w3-col m6 w3-padding-large">
@@ -104,17 +111,13 @@ div.lowercase {
       <p class="w3-large w3-text-grey"> You can type the missing words on the blackboard (use either lowercase or uppercase letters)
         then click the button to check your answers: green means the word is correct!</p>
       <p class="w3-large w3-text-grey"> If you need help, use the button to get hints. </p>
-
     </div>
-
   </div>
-
 
   <!-- Recruitment test STEP 3 section -->
   <div class="w3-row w3-padding-64" id="recruitment-test3">
     <div class="highlightbar-recruitmentstep" style="position:relative;left:450px;top:73px">
     </div>
-    <!-- <div class="highlightbar-recruitmentstep w3-hide-small w3-hide-medium" style="position:relative;left:450px;top:73px"></div>-->
     <h5 class="w3-center">Step #3 - FIND THE ANSWER TO THE QUESTION</h5>
     <h5 class="w3-center">and receive your reward</h5>
     <div class="w3-col m6 w3-padding-large">
@@ -127,7 +130,6 @@ div.lowercase {
     </div>
 
     <div class="w3-col l6 w3-padding-round-16">
-        <!-- <div class="w3-col l6 w3-padding-round-16 w3-hide-small w3-hide-medium">-->
       <img src="images\spyexam01.jpg" class="w3-round w3-image" alt="Spy Exam Results" style="width:100%;" >
     </div>
   </div>
@@ -143,7 +145,6 @@ div.lowercase {
 <script>
 
 /* Global variables*/
-
 
   function fCheckClues() {
     document.getElementById("idCheckClues").disabled = true;
