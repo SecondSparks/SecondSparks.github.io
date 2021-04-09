@@ -290,35 +290,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     text-align: center;
     }
 
-.acg-answer1 {
-      position: absolute;
-      top: 7px;
-      left: 230px;
-    }
 
-.acg-answer2 {
-      position: absolute;
-      top: 57px;
-      left: 85px;
-    }
-
-.acg-answer3 {
-      position: absolute;
-      top: 97px;
-      left: 85px;
-    }
-
-.acg-answer4 {
-      position: absolute;
-      top: 140px;
-      left: 250px;
-    }
-
-.acg-answer5 {
-      position: absolute;
-      top: 193px;
-      left: 120px;
-    }
 
 .acg-text-block {
   position: absolute;
